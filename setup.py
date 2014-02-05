@@ -13,7 +13,7 @@ setup(
     packages = ['simpleblog'],
     include_package_data = True,
     license = 'BSD License',
-    description = 'An easy way to start writting blog posts.',
+    description = 'An easy way to start writing blog posts.',
     long_description = readme,
     url = 'https://github.com/Drager/django-simple-blog',
     author = 'Drager',
