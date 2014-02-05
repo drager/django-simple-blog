@@ -43,6 +43,15 @@ Usage
           url(r'^admin/', include(admin.site.urls)),
       )
 
+Settings
+========
+``django-simple-blog`` has one setting at the moment::
+
+  # How long the length of the textarea should be.
+  
+  MAX_LENGTH_TEXTAREA = 120 (defaults to None)
+
+
 Templatetags
 ===========
 
