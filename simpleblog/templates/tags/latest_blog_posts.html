@@ -1,0 +1,17 @@
+{% load humanize %}
+
+<section>
+	<header>
+		<h1>Recent posts</h1>
+	</header>
+	<ul>
+		{% for latest_blog_post in latest_blog_posts %}
+		<li>
+			<a href="{{ latest_blog_post.get_absolute_url }}">
+				<h2>{{ latest_blog_post }}</h2>
+			</a>
+			- {{ latest_blog_post.post_date|naturaltime }}
+		</li>
+		{% endfor %}
+	</ul>
+</section>

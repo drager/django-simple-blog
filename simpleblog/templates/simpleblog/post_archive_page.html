@@ -1,0 +1,34 @@
+{% load endless %}
+
+{% if posts %}
+	{% paginate posts %}
+
+	{% for post in posts %}
+		<article>
+			<header>
+				<h2>
+					<a href="{{ post.get_absolute_url }}">{{ post }}</a>
+				</h2>
+			</header>
+			<p class="publish-data">
+				Posted on 
+				<time itemprop="datePublished" datetime="{{ post.post_date|date:'Y-m-d H:i:s' }}">
+					{{ post.post_date }}
+				</time>
+				by 
+				<span itemprop="author">{{ post.posted_by }}</span> - 
+				<a itemprop="discussionUrl" href="{{ post.get_absolute_url }}#comments">
+					<span itemprop="comment">
+						{{ post.comment_count }} comment{{ post.comment_count|pluralize }}
+					</span>
+				</a>
+			</p>
+		</article>
+		<hr />
+	{% endfor %} 
+
+	{% show_more "Load more blog posts" %} 
+
+{% else %}
+	<p>There's no blog entries...</p>
+{% endif %}

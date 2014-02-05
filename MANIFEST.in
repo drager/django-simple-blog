@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+include requirements.txt
+recursive-include simpleblog/templates *
+recursive-include simpleblog/templatetags *
+recursive-include simpleblog/locale *

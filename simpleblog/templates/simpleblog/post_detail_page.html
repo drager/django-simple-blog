@@ -1,0 +1,26 @@
+{% load endless %}
+
+{% if comments %} 
+	{% paginate comments %}
+	{% for comment in comments %}
+		<div class="comment-post">
+			<article itemscope itemtype="http://schema.org/Comment" itemprop="comment">
+				<header>
+					<span itemprop="creator">{{ comment.user_name }}</span>
+					<time itemprop="dateCreated" datetime="{{ comment.post_date|date:'Y-m-d H:i:s' }}"> 
+						{{ comment.post_date }} 
+					</time>
+				</header>
+				<span itemprop="text">
+					{{ comment.bodytext|linebreaks }}
+				</span>
+				<hr />
+			</article>
+		</div>
+	{% endfor %}
+
+	{% show_more "Load more comments" %}
+
+{% else %}
+	<p>There's no comments...</p>
+{% endif %}

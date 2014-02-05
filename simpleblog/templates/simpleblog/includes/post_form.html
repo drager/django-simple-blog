@@ -1,0 +1,16 @@
+<form action="" method="post">
+{% csrf_token %}
+	{% for field in comment_form %}
+        <div class="fieldWrapper">
+            {{ field.errors }}
+
+            {{ field.label_tag }}
+            <br />
+            {{ field }}
+            
+        </div>
+    {% endfor %}
+	<p>
+		<input type="submit" class="button" value="Comment" />
+	</p>
+</form>
