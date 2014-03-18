@@ -1,3 +1,9 @@
+{% comment %}
+Ugly but unfortunately short of refactoring I have no way around it.
+Open to comments
+{% endcomment %}
+{{ comment_form.media }}
+
 <form action="" method="post">
 {% csrf_token %}
 	{% for field in comment_form %}
@@ -7,7 +13,7 @@
             {{ field.label_tag }}
             <br />
             {{ field }}
-            
+
         </div>
     {% endfor %}
 	<p>

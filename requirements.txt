@@ -2,3 +2,5 @@ Django>=1.5
 django-endless-pagination>=2.0
 # TODO update package on PyPi; otherwise download straight from github
 django-simple-math-captcha>=1.0.2
+django-markdown-deux>=1.0.4
+django-pagedown>=0.0.5

@@ -1,5 +1,7 @@
 {% load endless %}
 
+{% load markdown_deux_tags %}
+
 {% if posts %}
 	{% paginate posts %}
 
@@ -25,11 +27,11 @@
 				</a>
 			</p>
 			
-			<span itemprop="articleBody">{{ post.bodytext|linebreaks }}</span>
+			<span itemprop="articleBody">{{ post.bodytext|markdown|linebreaks }}</span>
 
 			<footer>
 				<a class="button right" href="{{ post.get_absolute_url }}">Read more</a>
-				<span class="hidden" itemprop="wordCount">{{ post.bodytext|wordcount }}</span>
+				<span class="hidden" itemprop="wordCount">{{ post.bodytext|markdown|wordcount }}</span>
 			</footer>
 		</article>
 	{% endfor %}

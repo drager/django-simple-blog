@@ -1,4 +1,5 @@
 {% load endless %}
+{% load markdown_deux_tags %}
 
 {% if comments %} 
 	{% paginate comments %}
@@ -12,7 +13,7 @@
 					</time>
 				</header>
 				<span itemprop="text">
-					{{ comment.bodytext|linebreaks }}
+					{{ comment.bodytext|markdown|linebreaks }}
 				</span>
 				<hr />
 			</article>

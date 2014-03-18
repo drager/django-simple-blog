@@ -1,4 +1,9 @@
 # Update django-simple-math-captcha>=1.0.2 on PyPi; otherwise download straight from github.
 
-# Add markdown or equal to the blog posts and all the forms (admin included).
+# Create our own tags so rendering posts/comments follows DRY
 
+# Pagedown: enforce comment max length
+
+# Pagedown: can we display editor and preview side-by-side?
+
+# Pagedown: left-aligh comment editor
