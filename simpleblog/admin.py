@@ -1,5 +1,4 @@
 from django.contrib import admin
-# TODO does the name follow PEP 8?
 from django.db import models as django_models
 
 from pagedown.widgets import AdminPagedownWidget
