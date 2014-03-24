@@ -2,6 +2,10 @@
 
 # Pagedown: enforce comment max length
 
-# Pagedown: can we display editor and preview side-by-side?
+# Pagedown: can we display editor and preview side-by-side? (would look better
+  in admin dashboard)
 
-# Pagedown: left-aligh comment editor
+# Pagedown: left-align comment editor
+
+# Make blog post content (not comments) unsafe so the author can include HTML
+  tags

@@ -25,13 +25,10 @@
 			</a>
 		</p>
 
-        {% comment %}
-        TODO make unsafe
-        {% endcomment %}
-		<span itemprop="articleBody">{{ post.bodytext|markdown|linebreaks }}</span>
+		<span itemprop="articleBody">{{ post.bodytext|markdown }}</span>
 
 		<footer>
-			<span class="hidden" itemprop="wordCount">{{ post.bodytext|markdown|wordcount }}</span>
+			<span class="hidden" itemprop="wordCount">{{ post.bodytext|wordcount }}</span>
 		</footer>
 		<hr />
 	</article>
