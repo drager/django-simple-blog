@@ -89,8 +89,14 @@ Requirements
 `endless-pagination>=2.0
 <https://github.com/frankban/django-endless-pagination/>`_
 
-`simplemathcaptcha>=1.0.2
+`simplemathcaptcha>=1.0.3
 <https://github.com/alsoicode/django-simple-math-captcha/>`_
+
+`django-markdown-deux>=1.0.4
+<https://github.com/>`_
+
+
+`django-pagedown>=0.0.5
 
 If you have problem getting the right versions of these packages,
 clone them from their github repository.
