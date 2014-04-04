@@ -93,10 +93,11 @@ Requirements
 <https://github.com/alsoicode/django-simple-math-captcha/>`_
 
 `django-markdown-deux>=1.0.4
-<https://github.com/>`_
+<https://github.com/trentm/django-markdown-deux>`_
 
 
 `django-pagedown>=0.0.5
+<https://github.com/timmyomahony/django-pagedown>`_
 
 If you have problem getting the right versions of these packages,
 clone them from their github repository.
