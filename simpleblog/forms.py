@@ -4,6 +4,8 @@ from django import forms
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext_lazy as _
 
+from pagedown.widgets import PagedownWidget
+
 from simplemathcaptcha.fields import MathCaptchaField
 
 from .models import Comment
@@ -13,6 +15,8 @@ from .settings import MAX_LENGTH_TEXTAREA
 class UserCommentForm(forms.ModelForm):
     error_msg = _(
         'Cannot be empty nor only contain spaces. Please fill in the field.')
+
+    bodytext = forms.CharField(widget=PagedownWidget())
 
     class Meta:
         model = Comment

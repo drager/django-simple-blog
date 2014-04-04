@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load markdown_deux_tags %}
+
 {% block content %}
 
 	<article itemscope itemtype="http://schema.org/Article">
@@ -22,8 +24,8 @@
 				</span>
 			</a>
 		</p>
-		
-		<span itemprop="articleBody">{{ post.bodytext|linebreaks }}</span>
+
+		<span itemprop="articleBody">{{ post.bodytext|markdown }}</span>
 
 		<footer>
 			<span class="hidden" itemprop="wordCount">{{ post.bodytext|wordcount }}</span>
@@ -32,7 +34,7 @@
 	</article>
 
 
-<h2>Comment</h2>
+<a name="comments"><h2>Comment</h2></a>
 {% if post.allow_comments %}
 	{% include 'simpleblog/includes/post_form.html' %}
 	<hr />
