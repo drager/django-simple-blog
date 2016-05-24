@@ -13,7 +13,7 @@ class Post(models.Model):
     post_date = models.DateTimeField(
         auto_now_add=True, verbose_name=_("post date"))
     modified = models.DateTimeField(null=True, verbose_name=_("modified"))
-    posted_by = models.ForeignKey(settings.AUTH_MODEL_USER, verbose_name=_("posted by"))
+    posted_by = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name=_("posted by"))
 
     allow_comments = models.BooleanField(
         default=True, verbose_name=_("allow comments"))
@@ -50,7 +50,7 @@ class Comment(models.Model):
         default='0.0.0.0', verbose_name=_("ip address"))
 
     user = models.ForeignKey(
-        settings.AUTH_MODEL_USER, null=True, blank=True, verbose_name=_("user"), related_name='comment_user')
+        settings.AUTH_USER_MODEL, null=True, blank=True, verbose_name=_("user"), related_name='comment_user')
     user_name = models.CharField(
         max_length=50, default='anonymous', verbose_name=_("user name"))
     user_email = models.EmailField(blank=True, verbose_name=_("user email"))
