@@ -9,7 +9,7 @@ urlpatterns = [
                     ),
                 url(r'^archive/$',
                     BlogListView.as_view(
-                        template_name="simpleblog/post_archive_page.html",
+                        template_name="simpleblog/post_archive.html",
                         page_template="simpleblog/post_archive_page.html"),
                         name="blog_archive"),
                 url(r'^latest/feed/$', LatestEntriesFeed()),
