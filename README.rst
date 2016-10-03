@@ -24,7 +24,7 @@ You can do any of the following to install ``django-simple-blog``
 Usage
 =====
 
-1. Add ``simpleblog`` to your INSTALLED_APPS setting like this::
+1. Add ``simpleblog`` ``el_pagination`` ``markdown_deux`` ``pagedown`` to your INSTALLED_APPS setting like this::
 
       INSTALLED_APPS = (
           ...
