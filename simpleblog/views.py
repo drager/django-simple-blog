@@ -3,7 +3,7 @@ from django.contrib.sites.models import Site
 from django.shortcuts import redirect
 from django.views.generic.dates import DateDetailView
 
-from endless_pagination.views import AjaxListView
+from el_pagination.views import AjaxListView
 
 from .forms import UserCommentForm, CommentForm
 from .models import Post, Comment
