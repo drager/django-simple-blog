@@ -1,4 +1,5 @@
 import os
+
 from setuptools import setup
 
 version = __import__('simpleblog').get_version()

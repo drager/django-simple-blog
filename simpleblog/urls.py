@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from .views import BlogListView, BlogDetailView, LatestEntriesFeed
+from .views import BlogDetailView, BlogListView, LatestEntriesFeed
 
 urlpatterns = [
                 url(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<slug>[-_\w]+)/$',
