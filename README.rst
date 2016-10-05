@@ -24,15 +24,23 @@ You can do any of the following to install ``django-simple-blog``
 Usage
 =====
 
-1. Add ``simpleblog`` ``el_pagination`` ``markdown_deux`` ``pagedown`` to your INSTALLED_APPS setting like this::
+1. Add ``simpleblog`` to your INSTALLED_APPS setting like this::
 
       INSTALLED_APPS = (
           ...
-          'el_pagination',
-          'markdown_deux',
-          'pagedown',
           'simpleblog',
       )
+      
+    Note: if you want to customize the templates, please add ``el_pagination`` ``markdown_deux`` ``pagedown`` to your INSTALLED_APPS setting.
+
+    INSTALLED_APPS = (
+        ...
+        'el_pagination',
+        'markdown_deux',
+        'pagedown',
+        'simpleblog',
+    )
+
 2. Run ``python manage.py migrate``
 3. Include the ``simpleblog urls`` like this to have your "home page" as the blog index::
 
