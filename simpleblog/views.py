@@ -1,12 +1,11 @@
-from django.contrib.syndication.views import Feed
 from django.contrib.sites.models import Site
+from django.contrib.syndication.views import Feed
 from django.shortcuts import redirect
 from django.views.generic.dates import DateDetailView
+from el_pagination.views import AjaxListView
 
-from endless_pagination.views import AjaxListView
-
-from .forms import UserCommentForm, CommentForm
-from .models import Post, Comment
+from .forms import CommentForm, UserCommentForm
+from .models import Comment, Post
 
 
 class LatestEntriesFeed(Feed):

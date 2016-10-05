@@ -1,4 +1,4 @@
-{% load endless %}
+{% load el_pagination_tags %}
 
 {% load markdown_deux_tags %}
 
@@ -12,21 +12,21 @@
 					<h1>{{ post.title }}</h1>
 				</a>
 			</header>
-			
+
 			<p class="publish-data">
-				Posted on 
+				Posted on
 				<time itemprop="datePublished" datetime="{{ post.post_date|date:'Y-m-d H:i:s' }}">
 					{{ post.post_date }}
 				</time>
-				by 
-				<span itemprop="author">{{ post.posted_by }}</span> - 
+				by
+				<span itemprop="author">{{ post.posted_by }}</span> -
 				<a itemprop="discussionUrl" href="{{ post.get_absolute_url }}#comments">
 					<span itemprop="comment">
 						{{ post.comment_count }} comment{{ post.comment_count|pluralize }}
 					</span>
 				</a>
 			</p>
-			
+
 			<span itemprop="articleBody">{{ post.bodytext|markdown }}</span>
 
 			<footer>
