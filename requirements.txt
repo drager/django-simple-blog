@@ -1,4 +1,4 @@
-Django==1.10.2
+Django>=1.8
 django-el-pagination==3.0.1
 django-simple-math-captcha>=1.0.3
 django-markdown-deux>=1.0.4
