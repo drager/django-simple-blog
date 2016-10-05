@@ -26,20 +26,21 @@ Usage
 
 1. Add ``simpleblog`` to your INSTALLED_APPS setting like this::
 
-      INSTALLED_APPS = (
-          ...
-          'simpleblog',
-      )
-      
+       INSTALLED_APPS = (
+           ...
+           'simpleblog',
+       )
+
+
     Note: if you want to customize the templates, please add ``el_pagination`` ``markdown_deux`` ``pagedown`` to your INSTALLED_APPS setting.
 
-    INSTALLED_APPS = (
-        ...
-        'el_pagination',
-        'markdown_deux',
-        'pagedown',
-        'simpleblog',
-    )
+        INSTALLED_APPS = (
+            ...
+            'el_pagination',
+            'markdown_deux',
+            'pagedown',
+            'simpleblog',
+        )
 
 2. Run ``python manage.py migrate``
 3. Include the ``simpleblog urls`` like this to have your "home page" as the blog index::
@@ -91,7 +92,7 @@ like them, just override them with your own templates simply.
 Requirements
 ============
 
-`Django==1.10.1
+`Django>=1.8
 <https://github.com/django/django/>`_
 
 `django-el-paginatio>=2.0
