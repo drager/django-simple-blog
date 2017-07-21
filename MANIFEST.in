@@ -4,3 +4,4 @@ include requirements.txt
 recursive-include simpleblog/templates *
 recursive-include simpleblog/templatetags *
 recursive-include simpleblog/locale *
+recursive-include simpleblog/migrations *
