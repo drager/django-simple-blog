@@ -74,7 +74,7 @@ the latest desired number of posts. Just do this in any template::
 Translation
 ===========
 
-``django-simple-blog`` is available in ``english`` and ``swedish``
+``django-simple-blog`` is available in ``english``, ``swedish`` and ``french``
 at the moment, feel free to translate the application in another
 language.
 
