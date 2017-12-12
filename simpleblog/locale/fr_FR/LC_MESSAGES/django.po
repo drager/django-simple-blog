@@ -1,0 +1,98 @@
+# French translation of this blog.
+# Copyright (C) 2017
+# This file is distributed under the same license as the django-simple-blog package.
+# Florimond Manca <florimond.manca@gmail.com>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-10 11:22+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Florimond Manca <florimond.manca@gmail.com>\n"
+"Language-Team: Florimond Manca <florimond.manca@gmail.com>\n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:15
+msgid "Cannot be empty nor only contain spaces. Please fill in the field."
+msgstr "Ce champ ne peut pas être vide ou ne contenir que des espaces, veuillez le remplir."
+
+#: forms.py:36
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: forms.py:36
+msgid "anonymous"
+msgstr "anonyme"
+
+#: forms.py:37
+msgid "E-mail"
+msgstr "Adresse électronique"
+
+#: forms.py:39
+msgid "Welcome robot"
+msgstr "Bienvenue, robot"
+
+#: models.py:15
+msgid "title"
+msgstr "titre"
+
+#: models.py:17 models.py:53
+msgid "message"
+msgstr "contenu"
+
+#: models.py:20 models.py:56
+msgid "post date"
+msgstr "publié le"
+
+#: models.py:21
+msgid "modified"
+msgstr "modifié le"
+
+#: models.py:23
+msgid "posted by"
+msgstr "publié par"
+
+#: models.py:26
+msgid "allow comments"
+msgstr "autoriser les commentaires"
+
+#: models.py:28
+msgid "comment count"
+msgstr "nombre de commentaires"
+
+#: models.py:31 models.py:52
+msgid "post"
+msgstr "billet"
+
+#: models.py:32
+msgid "posts"
+msgstr "billets"
+
+#: models.py:58
+msgid "ip address"
+msgstr "adresse IP"
+
+#: models.py:62
+msgid "user"
+msgstr "utilisateur"
+
+#: models.py:64
+msgid "user name"
+msgstr "nom d'utilisateur"
+
+#: models.py:65
+msgid "user email"
+msgstr "email utilisateur"
+
+#: models.py:71
+msgid "comment"
+msgstr "commentaire"
+
+#: models.py:72
+msgid "comments"
+msgstr "commentaires"
