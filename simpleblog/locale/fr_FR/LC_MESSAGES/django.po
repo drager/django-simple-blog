@@ -1,6 +1,6 @@
 # French translation of this blog.
 # Copyright (C) 2017
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the django-simple-blog package.
 # Florimond Manca <florimond.manca@gmail.com>, 2017.
 #
 #, fuzzy
@@ -19,7 +19,7 @@ msgstr ""
 
 #: forms.py:15
 msgid "Cannot be empty nor only contain spaces. Please fill in the field."
-msgstr "Veuillez remplir ce champ."
+msgstr "Ce champ ne peut pas être vide ou ne contenir que des espaces, veuillez le remplir."
 
 #: forms.py:36
 msgid "Username"
@@ -35,7 +35,7 @@ msgstr "Adresse électronique"
 
 #: forms.py:39
 msgid "Welcome robot"
-msgstr "Bienvenue robot"
+msgstr "Bienvenue, robot"
 
 #: models.py:15
 msgid "title"
