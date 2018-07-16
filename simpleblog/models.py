@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django.conf import settings
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.db import models
 from django.db.models.signals import post_save
 from django.utils.encoding import python_2_unicode_compatible
@@ -20,7 +20,7 @@ class Post(models.Model):
         auto_now_add=True, verbose_name=_("post date"))
     modified = models.DateTimeField(null=True, verbose_name=_("modified"))
     posted_by = models.ForeignKey(settings.AUTH_USER_MODEL,
-                                  verbose_name=_("posted by"))
+                                  verbose_name=_("posted by"), on_delete=models.CASCADE)
 
     allow_comments = models.BooleanField(
         default=True, verbose_name=_("allow comments"))
@@ -49,7 +49,7 @@ class Post(models.Model):
 @python_2_unicode_compatible
 class Comment(models.Model):
     post = models.ForeignKey(
-        Post, related_name='comments', verbose_name=_("post"))
+        Post, related_name='comments', verbose_name=_("post"), on_delete=models.CASCADE)
     bodytext = models.TextField(verbose_name=_("message"))
 
     post_date = models.DateTimeField(
@@ -59,7 +59,7 @@ class Comment(models.Model):
 
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL, null=True, blank=True,
-        verbose_name=_("user"), related_name='comment_user')
+        verbose_name=_("user"), related_name='comment_user', on_delete=models.CASCADE)
     user_name = models.CharField(
         max_length=50, default='anonymous', verbose_name=_("user name"))
     user_email = models.EmailField(blank=True, verbose_name=_("user email"))
