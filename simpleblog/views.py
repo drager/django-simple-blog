@@ -27,9 +27,10 @@ class LatestEntriesFeed(Feed):
 class BlogListView(AjaxListView):
     context_object_name = "posts"
     queryset = Post.objects.all().select_related()
-    extra_context = {
-        'preview_words_count': PREVIEW_WORDS_COUNT
-    }
+
+    def get_context_data(self, **kwargs):
+        context = super(BlogListView, self).get_context_data(**kwargs)
+        context['preview_words_count'] = PREVIEW_WORDS_COUNT
 
 
 class BlogDetailView(DateDetailView):
