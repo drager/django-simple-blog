@@ -4,9 +4,9 @@ from django.shortcuts import redirect
 from django.views.generic.dates import DateDetailView
 from el_pagination.views import AjaxListView
 
-from .settings import PREVIEW_WORDS_COUNT
 from .forms import CommentForm, UserCommentForm
 from .models import Comment, Post
+from .settings import PREVIEW_WORDS_COUNT
 
 
 class LatestEntriesFeed(Feed):

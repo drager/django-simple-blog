@@ -47,7 +47,6 @@ class CommentForm(UserCommentForm):
             }
 
     def clean_user_name(self):
-        self.error_msg
         user_name = self.cleaned_data.get('user_name')
         if user_name:
             if not user_name.strip():
