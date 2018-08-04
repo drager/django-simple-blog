@@ -4,6 +4,7 @@ from django.shortcuts import redirect
 from django.views.generic.dates import DateDetailView
 from el_pagination.views import AjaxListView
 
+from .settings import PREVIEW_WORDS_COUNT
 from .forms import CommentForm, UserCommentForm
 from .models import Comment, Post
 
@@ -26,6 +27,9 @@ class LatestEntriesFeed(Feed):
 class BlogListView(AjaxListView):
     context_object_name = "posts"
     queryset = Post.objects.all().select_related()
+    extra_context = {
+        'preview_words_count': PREVIEW_WORDS_COUNT
+    }
 
 
 class BlogDetailView(DateDetailView):

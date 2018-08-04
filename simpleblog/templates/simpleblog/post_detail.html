@@ -25,7 +25,13 @@
 			</a>
 		</p>
 
-		<span itemprop="articleBody">{{ post.bodytext|markdown }}</span>
+		<span itemprop="articleBody">
+			{% if preview_words_count %}
+			    {{ post.bodytext|truncatewords_html:preview_words_count|markdown }}
+            {% else %}}
+                {{ post.bodytext|markdown }}
+            {% endif %}
+		</span>
 
 		<footer>
 			<span class="hidden" itemprop="wordCount">{{ post.bodytext|wordcount }}</span>
