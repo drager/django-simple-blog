@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-05 17:09+0300\n"
+"POT-Creation-Date: 2018-08-05 17:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jesper Håkansson <drager@programmers.se>\n"
 "Language-Team: Jesper Håkansson <drager@programmers.se\n"
@@ -118,6 +118,7 @@ msgid "by"
 msgstr ""
 
 #: templates/simpleblog/post_archive_page.html:31
+#: templates/simpleblog/post_list_page.html:45
 msgid "Load more blog posts"
 msgstr ""
 
@@ -142,11 +143,12 @@ msgstr "kommentarer"
 msgid "Comments are disabled for this post."
 msgstr ""
 
+#: templates/simpleblog/post_detail_page.html:24
+#, fuzzy
+#| msgid "allow comments"
+msgid "Load more comments"
+msgstr "tillåta kommentarer"
+
 #: templates/simpleblog/post_detail_page.html:27
 msgid "There's no comments..."
 msgstr ""
-
-#, fuzzy
-#~| msgid "allow comments"
-#~ msgid "Load more comments"
-#~ msgstr "tillåta kommentarer"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-05 17:09+0300\n"
+"POT-Creation-Date: 2018-08-05 17:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Timur Orudzhov <timur.orudzhov@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,6 +120,7 @@ msgid "by"
 msgstr "Автор:"
 
 #: templates/simpleblog/post_archive_page.html:31
+#: templates/simpleblog/post_list_page.html:45
 msgid "Load more blog posts"
 msgstr "Загрузить больше публикаций"
 
@@ -140,9 +141,10 @@ msgstr "Комментарии"
 msgid "Comments are disabled for this post."
 msgstr "Комментарии запрещены для данного поста"
 
+#: templates/simpleblog/post_detail_page.html:24
+msgid "Load more comments"
+msgstr "Загрузить больше комментариев"
+
 #: templates/simpleblog/post_detail_page.html:27
 msgid "There's no comments..."
 msgstr "Комментариев пока нет..."
-
-#~ msgid "Load more comments"
-#~ msgstr "Загрузить больше комментариев"
