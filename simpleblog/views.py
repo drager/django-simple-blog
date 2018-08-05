@@ -6,7 +6,7 @@ from el_pagination.views import AjaxListView
 
 from .forms import CommentForm, UserCommentForm
 from .models import Comment, Post
-from .settings import PREVIEW_WORDS_COUNT
+from .settings import PREVIEW_WORDS_COUNT, COMMENTS_DISABLED
 
 
 class LatestEntriesFeed(Feed):
@@ -31,6 +31,7 @@ class BlogListView(AjaxListView):
     def get_context_data(self, **kwargs):
         context = super(BlogListView, self).get_context_data(**kwargs)
         context['preview_words_count'] = PREVIEW_WORDS_COUNT
+        context['comments_disabled'] = COMMENTS_DISABLED
         return context
 
 
@@ -72,7 +73,8 @@ class BlogDetailView(DateDetailView):
         context = {
             'page_template': self.page_template,
             'comment_form': form,
-            'comments': Comment.objects.filter(post=self.object.id).select_related()
+            'comments': Comment.objects.filter(post=self.object.id).select_related(),
+            'comments_disabled': COMMENTS_DISABLED
         }
         return super(BlogDetailView, self).get_context_data(**context)
 

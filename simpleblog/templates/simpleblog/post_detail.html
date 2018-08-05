@@ -18,12 +18,14 @@
 				{{ post.post_date }}
 			</time>
 			{% trans 'by' %}
-			<span itemprop="author">{{ post.posted_by }}</span> - 
-			<a itemprop="discussionUrl" href="{{ post.get_absolute_url }}#comments">
-				<span itemprop="comment">
-					{{ post.comment_count }} {% trans 'comment' %}{{ post.comment_count|pluralize }}
-				</span>
-			</a>
+			<span itemprop="author">{{ post.posted_by }}</span>
+            {% if not comments_disabled %} -
+                <a itemprop="discussionUrl" href="{{ post.get_absolute_url }}#comments">
+                    <span itemprop="comment">
+                        {{ post.comment_count }} {% trans 'comment' %}{{ post.comment_count|pluralize }}
+                    </span>
+                </a>
+            {% endif %}
 		</p>
 
 		<span itemprop="articleBody">
@@ -36,17 +38,18 @@
 		<hr />
 	</article>
 
+{% if not comments_disabled %}
+    <a name="comments"><h2>{% trans 'Comment' %}</h2></a>
+    {% if post.allow_comments %}
+        {% include 'simpleblog/includes/post_form.html' %}
+        <hr />
+        <h2>{% trans 'Comments' %}</h2>
 
-<a name="comments"><h2>{% trans 'Comment' %}</h2></a>
-{% if post.allow_comments %}
-	{% include 'simpleblog/includes/post_form.html' %}
-	<hr />
-	<h2>{% trans 'Comments' %}</h2>
+        {% include page_template %}
 
-	{% include page_template %}
-
-{% else %}
-	<p>{% trans 'Comments are disabled for this post.' %}</p>
+    {% else %}
+        <p>{% trans 'Comments are disabled for this post.' %}</p>
+    {% endif %}
 {% endif %}
 
 {% endblock %}

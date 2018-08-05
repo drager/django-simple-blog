@@ -24,5 +24,7 @@
 	{% show_more _("Load more comments") %}
 
 {% else %}
-	<p>{% trans "There's no comments..." %}</p>
+    {% if not comments_disabled %}
+	    <p>{% trans "There's no comments..." %}</p>
+    {% endif %}
 {% endif %}
