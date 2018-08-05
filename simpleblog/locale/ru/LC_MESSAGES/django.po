@@ -110,7 +110,7 @@ msgstr "опубликовано"
 
 #: templates/simpleblog/post_list_page.html:21
 msgid "by"
-msgstr ""
+msgstr "Автор:"
 
 #: templates/simpleblog/post_list_page.html:45
 msgid "Load more blog posts"
