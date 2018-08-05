@@ -31,6 +31,7 @@ class BlogListView(AjaxListView):
     def get_context_data(self, **kwargs):
         context = super(BlogListView, self).get_context_data(**kwargs)
         context['preview_words_count'] = PREVIEW_WORDS_COUNT
+        return context
 
 
 class BlogDetailView(DateDetailView):

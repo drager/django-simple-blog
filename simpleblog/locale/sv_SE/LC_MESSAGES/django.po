@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-05 17:23+0300\n"
+"POT-Creation-Date: 2018-08-05 17:41+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jesper Håkansson <drager@programmers.se>\n"
 "Language-Team: Jesper Håkansson <drager@programmers.se\n"
@@ -92,6 +92,7 @@ msgstr "användare-epost"
 
 #: models.py:74 templates/simpleblog/post_archive_page.html:23
 #: templates/simpleblog/post_detail.html:24
+#: templates/simpleblog/post_list_page.html:25
 msgid "comment"
 msgstr "kommentar"
 
@@ -151,4 +152,8 @@ msgstr "tillåta kommentarer"
 
 #: templates/simpleblog/post_detail_page.html:27
 msgid "There's no comments..."
+msgstr ""
+
+#: templates/simpleblog/post_list_page.html:39
+msgid "Read more"
 msgstr ""
