@@ -1,5 +1,5 @@
+{% load i18n %}
 {% load el_pagination_tags %}
-
 {% load markdown_deux_tags %}
 
 {% if posts %}
@@ -14,11 +14,11 @@
 			</header>
 
 			<p class="publish-data">
-				Posted on
+				{% trans 'Posted on' %}
 				<time itemprop="datePublished" datetime="{{ post.post_date|date:'Y-m-d H:i:s' }}">
 					{{ post.post_date }}
 				</time>
-				by
+				{% trans 'by' %}
 				<span itemprop="author">{{ post.posted_by }}</span> -
 				<a itemprop="discussionUrl" href="{{ post.get_absolute_url }}#comments">
 					<span itemprop="comment">
@@ -42,8 +42,8 @@
 		</article>
 	{% endfor %}
 
-	{% show_more "Load more blog posts" %}
+	{% show_more _("Load more blog posts") %}
 
 {% else %}
-    <p>There's no blog entries...</p>
+    <p>{% blocktrans %}There's no blog entries...{% endblocktrans %}</p>
 {% endif %}

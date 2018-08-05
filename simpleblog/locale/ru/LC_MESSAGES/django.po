@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-04 22:49+0300\n"
+"POT-Creation-Date: 2018-08-05 10:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Timur Orudzhov <timur.orudzhov@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,9 @@ msgstr ""
 
 #: forms.py:15
 msgid "Cannot be empty nor only contain spaces. Please fill in the field."
-msgstr "Не может быть пустым и не содержать только пробелы. Пожалуйста, заполните поле."
+msgstr ""
+"Не может быть пустым и не содержать только пробелы. Пожалуйста, заполните "
+"поле."
 
 #: forms.py:36
 msgid "Username"
@@ -99,3 +101,21 @@ msgstr "комментарий"
 #: models.py:75
 msgid "comments"
 msgstr "комментарии"
+
+#: templates/simpleblog/post_list_page.html:17
+#, fuzzy
+#| msgid "posted by"
+msgid "Posted on"
+msgstr "опубликовано"
+
+#: templates/simpleblog/post_list_page.html:21
+msgid "by"
+msgstr ""
+
+#: templates/simpleblog/post_list_page.html:45
+msgid "Load more blog posts"
+msgstr "Загрузить больше публикаций"
+
+#: templates/simpleblog/post_list_page.html:48
+msgid "There's no blog entries..."
+msgstr "Публикаций пока нет..."
