@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-10 11:22+0100\n"
+"POT-Creation-Date: 2018-08-05 17:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Florimond Manca <florimond.manca@gmail.com>\n"
 "Language-Team: Florimond Manca <florimond.manca@gmail.com>\n"
@@ -19,7 +19,9 @@ msgstr ""
 
 #: forms.py:15
 msgid "Cannot be empty nor only contain spaces. Please fill in the field."
-msgstr "Ce champ ne peut pas être vide ou ne contenir que des espaces, veuillez le remplir."
+msgstr ""
+"Ce champ ne peut pas être vide ou ne contenir que des espaces, veuillez le "
+"remplir."
 
 #: forms.py:36
 msgid "Username"
@@ -41,11 +43,11 @@ msgstr "Bienvenue, robot"
 msgid "title"
 msgstr "titre"
 
-#: models.py:17 models.py:53
+#: models.py:17 models.py:55
 msgid "message"
 msgstr "contenu"
 
-#: models.py:20 models.py:56
+#: models.py:20 models.py:58
 msgid "post date"
 msgstr "publié le"
 
@@ -57,42 +59,95 @@ msgstr "modifié le"
 msgid "posted by"
 msgstr "publié par"
 
-#: models.py:26
+#: models.py:27
 msgid "allow comments"
 msgstr "autoriser les commentaires"
 
-#: models.py:28
+#: models.py:29
 msgid "comment count"
 msgstr "nombre de commentaires"
 
-#: models.py:31 models.py:52
+#: models.py:32 models.py:53
 msgid "post"
 msgstr "billet"
 
-#: models.py:32
+#: models.py:33
 msgid "posts"
 msgstr "billets"
 
-#: models.py:58
+#: models.py:60
 msgid "ip address"
 msgstr "adresse IP"
 
-#: models.py:62
+#: models.py:64
 msgid "user"
 msgstr "utilisateur"
 
-#: models.py:64
+#: models.py:67
 msgid "user name"
 msgstr "nom d'utilisateur"
 
-#: models.py:65
+#: models.py:68
 msgid "user email"
 msgstr "email utilisateur"
 
-#: models.py:71
+#: models.py:74 templates/simpleblog/post_archive_page.html:23
+#: templates/simpleblog/post_detail.html:24
 msgid "comment"
 msgstr "commentaire"
 
-#: models.py:72
+#: models.py:75
 msgid "comments"
 msgstr "commentaires"
+
+#: templates/simpleblog/post_archive.html:7
+msgid "Blog archive"
+msgstr ""
+
+#: templates/simpleblog/post_archive_page.html:15
+#: templates/simpleblog/post_detail.html:16
+#: templates/simpleblog/post_list_page.html:17
+#, fuzzy
+#| msgid "posted by"
+msgid "Posted on"
+msgstr "publié par"
+
+#: templates/simpleblog/post_archive_page.html:19
+#: templates/simpleblog/post_detail.html:20
+#: templates/simpleblog/post_list_page.html:21
+msgid "by"
+msgstr ""
+
+#: templates/simpleblog/post_archive_page.html:31
+msgid "Load more blog posts"
+msgstr ""
+
+#: templates/simpleblog/post_archive_page.html:34
+#: templates/simpleblog/post_list_page.html:48
+msgid "There's no blog entries..."
+msgstr ""
+
+#: templates/simpleblog/post_detail.html:40
+#, fuzzy
+#| msgid "comments"
+msgid "Comment"
+msgstr "commentaires"
+
+#: templates/simpleblog/post_detail.html:44
+#, fuzzy
+#| msgid "comments"
+msgid "Comments"
+msgstr "commentaires"
+
+#: templates/simpleblog/post_detail.html:49
+msgid "Comments are disabled for this post."
+msgstr ""
+
+#: templates/simpleblog/post_detail_page.html:27
+msgid "There's no comments..."
+msgstr ""
+
+#, fuzzy
+#~| msgid "allow comments"
+#~ msgid "Load more comments"
+#~ msgstr "autoriser les commentaires"

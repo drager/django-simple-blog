@@ -8,91 +8,145 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-05 13:14+0100\n"
+"POT-Creation-Date: 2018-08-05 17:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jesper Håkansson <drager@programmers.se>\n"
 "Language-Team: Jesper Håkansson <drager@programmers.se\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\forms.py:15
+#: forms.py:15
 msgid "Cannot be empty nor only contain spaces. Please fill in the field."
 msgstr ""
 "Kan ej vara tomt eller bara innehålla mellanslag. Vänligen fyll i fältet."
 
-#: .\forms.py:34
+#: forms.py:36
 msgid "Username"
 msgstr "Användarnamn"
 
-#: .\forms.py:34
+#: forms.py:36
 msgid "anonymous"
 msgstr "anonym"
 
-#: .\forms.py:35
+#: forms.py:37
 msgid "E-mail"
 msgstr "E-post"
 
-#: .\forms.py:37
+#: forms.py:39
 msgid "Welcome robot"
 msgstr "Välkommen robot"
 
-#: .\models.py:8
+#: models.py:15
 msgid "title"
 msgstr "titel"
 
-#: .\models.py:10 .\models.py:44
+#: models.py:17 models.py:55
 msgid "message"
 msgstr "meddelande"
 
-#: .\models.py:13 .\models.py:47
+#: models.py:20 models.py:58
 msgid "post date"
 msgstr "publiceringsdatum"
 
-#: .\models.py:14
+#: models.py:21
 msgid "modified"
 msgstr "ändrad"
 
-#: .\models.py:15
+#: models.py:23
 msgid "posted by"
 msgstr "publicerad av"
 
-#: .\models.py:18
+#: models.py:27
 msgid "allow comments"
 msgstr "tillåta kommentarer"
 
-#: .\models.py:20
+#: models.py:29
 msgid "comment count"
 msgstr "antal kommentarer"
 
-#: .\models.py:23 .\models.py:43
+#: models.py:32 models.py:53
 msgid "post"
 msgstr "inlägg"
 
-#: .\models.py:24
+#: models.py:33
 msgid "posts"
 msgstr "inlägg"
 
-#: .\models.py:49
+#: models.py:60
 msgid "ip address"
 msgstr "ip-adress"
 
-#: .\models.py:52
+#: models.py:64
 msgid "user"
 msgstr "användare"
 
-#: .\models.py:54
+#: models.py:67
 msgid "user name"
 msgstr "användarnamn"
 
-#: .\models.py:55
+#: models.py:68
 msgid "user email"
 msgstr "användare-epost"
 
-#: .\models.py:58
+#: models.py:74 templates/simpleblog/post_archive_page.html:23
+#: templates/simpleblog/post_detail.html:24
 msgid "comment"
 msgstr "kommentar"
 
-#: .\models.py:59
+#: models.py:75
 msgid "comments"
 msgstr "kommentarer"
+
+#: templates/simpleblog/post_archive.html:7
+msgid "Blog archive"
+msgstr ""
+
+#: templates/simpleblog/post_archive_page.html:15
+#: templates/simpleblog/post_detail.html:16
+#: templates/simpleblog/post_list_page.html:17
+#, fuzzy
+#| msgid "posted by"
+msgid "Posted on"
+msgstr "publicerad av"
+
+#: templates/simpleblog/post_archive_page.html:19
+#: templates/simpleblog/post_detail.html:20
+#: templates/simpleblog/post_list_page.html:21
+msgid "by"
+msgstr ""
+
+#: templates/simpleblog/post_archive_page.html:31
+msgid "Load more blog posts"
+msgstr ""
+
+#: templates/simpleblog/post_archive_page.html:34
+#: templates/simpleblog/post_list_page.html:48
+msgid "There's no blog entries..."
+msgstr ""
+
+#: templates/simpleblog/post_detail.html:40
+#, fuzzy
+#| msgid "comments"
+msgid "Comment"
+msgstr "kommentarer"
+
+#: templates/simpleblog/post_detail.html:44
+#, fuzzy
+#| msgid "comments"
+msgid "Comments"
+msgstr "kommentarer"
+
+#: templates/simpleblog/post_detail.html:49
+msgid "Comments are disabled for this post."
+msgstr ""
+
+#: templates/simpleblog/post_detail_page.html:27
+msgid "There's no comments..."
+msgstr ""
+
+#, fuzzy
+#~| msgid "allow comments"
+#~ msgid "Load more comments"
+#~ msgstr "tillåta kommentarer"

@@ -17,7 +17,7 @@
 			<time itemprop="datePublished" datetime="{{ post.post_date|date:'Y-m-d H:i:s' }}">
 				{{ post.post_date }}
 			</time>
-			by 
+			{% trans 'by' %}
 			<span itemprop="author">{{ post.posted_by }}</span> - 
 			<a itemprop="discussionUrl" href="{{ post.get_absolute_url }}#comments">
 				<span itemprop="comment">
@@ -37,7 +37,7 @@
 	</article>
 
 
-<a name="comments"><h2>Comment</h2></a>
+<a name="comments"><h2>{% trans 'Comment' %}</h2></a>
 {% if post.allow_comments %}
 	{% include 'simpleblog/includes/post_form.html' %}
 	<hr />
