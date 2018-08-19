@@ -40,14 +40,14 @@ class BlogDetailView(DateDetailView):
 
     def post(self, request, *args, **kwargs):
         self.object = post = self.get_object()
-        if request.user.is_authenticated():
+        if request.user.is_authenticated:
             form = UserCommentForm(request.POST)
         else:
             form = CommentForm(request.POST)
         if form.is_valid():
             comment = form.save(commit=False)
             comment.post = post
-            if request.user.is_authenticated():
+            if request.user.is_authenticated:
                 comment.user = request.user
                 comment.user_name = request.user
                 comment.user_email = request.user.email
@@ -59,7 +59,7 @@ class BlogDetailView(DateDetailView):
         return self.render_to_response(context)
 
     def get_context_data(self, **kwargs):
-        if self.request.user.is_authenticated():
+        if self.request.user.is_authenticated:
             form = UserCommentForm()
         else:
             form = CommentForm()
