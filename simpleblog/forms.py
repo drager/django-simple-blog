@@ -35,8 +35,8 @@ class UserCommentForm(forms.ModelForm):
 class CommentForm(UserCommentForm):
     user_name = forms.CharField(label=_('Username'), initial=_('anonymous'))
     user_email = forms.EmailField(label=_('E-mail'), required=False)
-    captcha = MathCaptchaField(
-        required=True, error_messages={'invalid': _('Welcome robot')})
+    # captcha = MathCaptchaField(
+        # required=True, error_messages={'invalid': _('Welcome robot')})
 
     class Meta:
         model = Comment
