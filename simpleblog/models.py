@@ -18,8 +18,8 @@ class Post(models.Model):
 
     post_date = models.DateTimeField(
         auto_now_add=True, verbose_name=_("post date"))
-    modified = models.DateTimeField(null=True, verbose_name=_("modified"))
-    posted_by = models.ForeignKey(settings.AUTH_USER_MODEL, null=True,
+    modified = models.DateTimeField(null=True, blank=True, verbose_name=_("modified"))
+    posted_by = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True,
                                   verbose_name=_("posted by"),
                                   on_delete=models.SET_NULL)
 
