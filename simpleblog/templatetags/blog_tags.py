@@ -22,4 +22,4 @@ register.inclusion_tag('tags/latest_blog_posts.html',
 
 @register.simple_tag
 def maxwords():
-    return getattr(settings, BLOG_LIST_MAX_WORDS, 100)
+    return getattr(settings, 'BLOG_LIST_MAX_WORDS', 100)

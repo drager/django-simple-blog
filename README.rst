@@ -64,7 +64,7 @@ Settings
   # Blog content is truncated after this in blog list.
   # If content larger than this value, the 'read more' 
   # button is displayed
-  BLOG_LIST_MAX_PREV_WORDS = 100 (defaults to 100) 
+  BLOG_LIST_MAX_WORDS = 100 (defaults to 100) 
 
 
 Templatetags
