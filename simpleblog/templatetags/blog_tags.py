@@ -1,9 +1,9 @@
 from django import template
+from django.conf import settings
 
 from ..models import Post
 
 register = template.Library()
-
 
 def latest_blog_posts(context, num):
     """
@@ -18,3 +18,8 @@ def latest_blog_posts(context, num):
 
 register.inclusion_tag('tags/latest_blog_posts.html',
                        takes_context=True)(latest_blog_posts)
+
+
+@register.simple_tag
+def maxwords():
+    return getattr(settings, BLOG_LIST_MAX_WORDS, 100)

@@ -27,11 +27,16 @@
 				</a>
 			</p>
 
-			<span itemprop="articleBody">{{ post.bodytext|markdown }}</span>
+			{% maxwords as max %}
+			<span itemprop="articleBody">{{ post.bodytext|markdown|truncatewords_html:max }}</span>
 
 			<footer>
+				{% with words=post.bodytext|wordcount %}
+				{% if words > max %}
 				<a class="button right" href="{{ post.get_absolute_url }}">Read more</a>
+				{% endif %}
 				<span class="hidden" itemprop="wordCount">{{ post.bodytext|wordcount }}</span>
+				{% endwith %}
 			</footer>
 		</article>
 	{% endfor %}
