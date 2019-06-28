@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-08 12:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Christian Wiegand <cwiegand@wgdnet.de>\n"
+"Language-Team: Christian Wiegand <cwiegand@wgdnet.de>\n"
+"Language: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:15
+msgid "Cannot be empty nor only contain spaces. Please fill in the field."
+msgstr "Das Feld ist nicht gefüllt oder enthält nur Leerzeichen, bitte füllen."
+
+#: forms.py:36
+msgid "Username"
+msgstr "Benutzername"
+
+#: forms.py:36
+msgid "anonymous"
+msgstr "anonym"
+
+#: forms.py:37
+msgid "E-mail"
+msgstr ""
+
+#: models.py:15
+msgid "title"
+msgstr "Titel"
+
+#: models.py:17 models.py:55
+msgid "message"
+msgstr "Nachricht"
+
+#: models.py:20 models.py:58
+msgid "post date"
+msgstr "Erstellt"
+
+#: models.py:21
+msgid "modified"
+msgstr "Geändert"
+
+#: models.py:23
+msgid "posted by"
+msgstr "Erstellt von"
+
+#: models.py:27
+msgid "allow comments"
+msgstr "Kommentare erlauben"
+
+#: models.py:29
+msgid "comment count"
+msgstr "Anzahl Kommentare"
+
+#: models.py:32 models.py:53
+msgid "post"
+msgstr "Blogbeitrag"
+
+#: models.py:33
+msgid "posts"
+msgstr "Blogbeiträge"
+
+#: models.py:60
+msgid "ip address"
+msgstr "IP Adresse"
+
+#: models.py:64
+msgid "user"
+msgstr "Benutzer"
+
+#: models.py:67
+msgid "user name"
+msgstr "Benutzer Name"
+
+#: models.py:68
+msgid "user email"
+msgstr "Benutzer E-Mail"
+
+#: models.py:74
+msgid "comment"
+msgstr "Kommentar"
+
+#: models.py:75
+msgid "comments"
+msgstr "Kommentare"

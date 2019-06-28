@@ -56,11 +56,17 @@ Usage
 
 Settings
 ========
-``django-simple-blog`` has one setting at the moment::
 
   # How long the length of the textarea should be.
-
+  
   MAX_LENGTH_TEXTAREA = 120 (defaults to None)
+
+  # Maximum of words shown in blog list as preview.
+  # Blog content is truncated after this in blog list.
+  # If content larger than this value, the 'read more' 
+  # button is displayed
+  
+  BLOG_LIST_MAX_WORDS = 100 (defaults to 100) 
 
 
 Templatetags
