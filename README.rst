@@ -26,23 +26,23 @@ Usage
 
 1. Add ``simpleblog`` and `django.contrib.sites` to your INSTALLED_APPS setting like this::
 
-         INSTALLED_APPS = (
+         INSTALLED_APPS = [
              ...
              'django.contrib.sites',
              'simpleblog',
-         )
+         ]
 
 
     Note: if you want to customize the templates, please add ``el_pagination`` ``markdown_deux`` ``pagedown`` to your INSTALLED_APPS setting.
 
-        INSTALLED_APPS = (
+        INSTALLED_APPS = [
             ...
             'django.contrib.sites',
             'el_pagination',
             'markdown_deux',
             'pagedown',
             'simpleblog',
-        )
+        ]
 2. Add `SITE_ID = 1` in your settings.py.
 3. Run ``python manage.py migrate``
 4. Include the ``simpleblog urls`` like this to have your "home page" as the blog index::
@@ -60,7 +60,7 @@ Settings
 
   # How long the length of the textarea should be.
 
-  MAX_LENGTH_TEXTAREA = 120 (defaults to None)
+  MAX_LENGTH_TEXTAREA = 120 #(defaults to None)
 
 
 Templatetags
